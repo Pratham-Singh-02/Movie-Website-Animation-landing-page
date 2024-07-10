@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">iMovies</a>
+        <ul class="nav">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content the-little-mermaid active">
+            <img src="./the-little-mermaid-title.png" alt="" class="movie-title"/>
+            <h4>
+                <span>2023</span><span id="age">12+</span><span>2h 14m</span><span>Romance</span>
+            </h4>
+            <p>
+                Ariel falls in love with Prince Eric, a handsome human who has been shipwrecked on her father’s kingdom. She makes a deal with the sea witch, Ursula, to trade her beautiful voice for a pair of human legs. Ariel becomes human and meets Prince Eric on land, but things don’t go as planned. Ursula has her own motives and plans to use Ariel’s voice to seduce Prince Eric and marry him herself.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <div class="content 65">
+            <img class="movie-title"
+            src="the-65-title.png"
+            alt="Movie name"
+            />
+            <h4>
+                <span>2023</span>
+                <span>15+</span>
+                <span>1h 33m</span>
+                <span>Action</span>
+            </h4>
+
+            <p>
+                After crash-landing on the planet, Mills finds a young girl, Margo, who is also stranded. As they try to survive on the hostile planet, they encounter various dangers, including the dinosaurs.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <div class="content the-covenant">
+            <img 
+            class="movie-title"
+            src="./the-covenant-title.png"
+            alt="Movie name"
+             />
+             <h4>
+                <span>2023</span>
+                <span>12+</span>
+                <span>2h 03m</span>
+                <span>War/Action</span>
+             </h4>
+             <p>
+                The movie begins with John Kinley and Ahmed working together in Afghanistan, where they face numerous challenges and dangers. After an ambush, Ahmed risks his life to save John’s, and they develop a deep respect and trust for each other.
+             </p>
+             <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <div class="content the-black-demon">
+            <img class="movie-title"
+            src="./the-black-demon-title.png"
+             alt="Movie name"
+             />
+             <h4>
+                <span>2023</span>
+                <span>13+</span>
+                <span>1h 40m</span>
+                <span>Thriller</span>
+             </h4>
+             <p>
+                Oilman Paul Sturges who takes his family to Bahia Negra, the site of Paul’s best-performing oil rig. However, the town has mysteriously crumbled, and the townsfolk believe that the rig has awoken a shark of legend, known as The Black Demon.
+             </p>
+             <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+
+
+        </div>
+        <div class="content the-tank">
+            <img class="movie-title"
+            src="./the-tank-title.png"
+            alt="Movie name"
+            />
+            <h4>
+                <span>2023</span>
+                <span>15+</span>
+                <span>1h 40m</span>
+                <span>Horror</span>
+            </h4>
+            <p>
+                A retired Army officer, Zack Carey, who uses his vintage Sherman tank to liberate his son and other imprisoned allies after his son is wrongly imprisoned. The officer’s wife has blackmailed the Governor of Tennessee into offering a proper extradition hearing to the fugitives.
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item"
+                onClick="changeBg('bg-little-mermaid-edited.jpg', 'the-little-mermaid');"
+                >
+                    <img src="./movies/the-little-mermaid.jpg" alt="">
+                </div>
+                <div class="carousel-item"             
+                onClick="changeBg('bg-65.jpeg', '65');"
+                >
+                    <img src="./movies/65.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');"
+                >
+                    <img src="./movies/the-black-demon.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-tank.jpeg', 'the-tank');"
+                >
+                    <img src="./movies/the-tank.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                onClick="changeBg('bg-the-covenant.jpeg', 'the-covenant');"
+                >
+                    <img src="./movies/the-covenant.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo();"><i class="fa-solid fa-circle-play"></i>Watch Trailer</a>
+        <ul class="sci">
+            <li>
+                <a href="#"></a><i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li>
+                <a href="#"></a><i class="fa-brands fa-youtube"></i>
+            </li>
+            <li>
+                <a href="#"></a><i class="fa-brands fa-x-twitter"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="trailer">
+        <video src="videoplayback.mp4" muted controls="true" autoplay="true"></video>
+        <img class="close"
+         src="./close.png"
+          alt=""
+          onclick="toggleVideo();"
+          />
+    </div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+          $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+    </script>
+</body>
+</html>
